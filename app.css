@@ -1,0 +1,335 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Sora', sans-serif;
+    font-family: 'Great Vibes', cursive;
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+body, html{
+    height: 100%;
+    width: 100%;
+    font-family: 'Sora', sans-serif;
+    bottom: 0;
+    margin: auto;
+    overflow-x:hidden;
+    overflow-y:hidden;
+}
+
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 1em;
+    color: #fca311;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #14213d;
+    width: 100%;
+    height: 6%;
+}
+
+.nav img{
+    display: flex;
+    position: absolute;
+    margin: auto;
+    right: 92%;
+    top: 6%;
+    left: 0.2%;
+    bottom: 100%;
+    height: 6%;
+    width: auto;
+}
+
+.nav #contact{
+    display: block;
+    position: absolute;
+    left: 92%;
+    margin: auto;
+    top: 2%;
+}
+
+.nav p{
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    font-family: 'Great Vibes', cursive;
+}
+
+.sec-container{
+    display: block;
+    flex-direction: row;
+    width: 100%;
+    overflow: scroll;
+    height: 100%;
+    
+}
+
+.sec-container #sec-1 #head-intro{
+    display: flex;
+    font-size: 7em;
+    font-weight: 800;
+    text-shadow: 10px 1px 15px black;
+    color: #fca311;
+    padding-top: 15%;
+    padding-left: 5%;
+    padding-right: 5%;
+    justify-content: center;
+    align-content: center;
+
+}
+
+.sec-container #sec-1 #head-intro #animate{
+    animation: fadeIn;
+    animation-duration: 12s;
+    animation-delay:  0.2s;
+    margin-left: 35px;
+    margin-right: 35px;
+
+}
+
+section{
+    height: 100%;
+    position: sticky;
+    top: 0;
+}
+
+#sec-1{
+    height: 70%;
+    animation: fadeIn;
+    animation-duration: 6s;
+    background-image: url("https://files.merryjane.com/uploads/generic/1560185875343_churchofenglandtoinvestinweed__WIDE.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#sec-2{
+    display: flex;
+    justify-content: center;
+    padding: 2em;
+    height: 103%;
+    background-color: #14213d;
+    justify-content: center;
+
+}
+
+.sec-container #sec-2 #header-1{
+    
+    margin-left: 50px;
+    font-size: 4em;
+    font-weight: 800;
+    color: #fca311;
+    
+}
+
+/*
+@-webkit-keyframes border{
+    from {width: 0px; opacity: 0%;}
+    to {width: 100%; opacity: 100%; padding-right: 2px; }
+}
+*/
+
+.sec-container #sec-2 #header-1:after{
+    z-index: 0;
+    content: '';
+    display: block;
+    margin: auto;
+    height: 3px;
+    width: 0px;
+    background: blue;
+    -webkit-animation-name: border;
+    -webkit-animation-duration: 4s;
+    -webkit-animation-fill-mode: forwards;
+    animation-name: border;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    
+}
+
+
+.sec-container #sec-2 .container{
+    display: flex;
+    justify-content: center;
+    background: transparent;
+    width: 100%;
+    height: 55%;
+}
+
+.sec-container #sec-2 .container p{
+    display: block;
+    width: 60%;
+    position: absolute;
+    top: 15%;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fca311;
+}
+
+.sec-container #sec-2 .container #pastor{
+    display: flex;
+    background-image: url("https://epmgaa.media.clients.ellingtoncms.com/img/photos/2020/03/27/Screen_Shot_2020-03-27_at_8.11.20_AM_t750x550.png?d885fc46c41745b3b5de550c70336c1b382931d2");
+    background-size: cover;
+    background-position: center;
+    border: 2px solid #fca311;
+    border-radius: 100%;
+    position: absolute;
+    right: 40px;
+    width: 10em;
+    height: 10em;
+}
+
+.sec-container #sec-2 .container #pastor #pastor-bio{
+    display: block; 
+    border: 1px solid #fca311;
+    border-radius: 1em;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fca311;
+    text-shadow: 1px 1px 25px black;
+    position: absolute;
+    top: 170px;
+    left: 1px;
+    right: 20px;
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+}
+
+.sec-container #sec-2 .container #pastor-left{
+    display: flex;
+    background-image: url("https://pbs.twimg.com/profile_images/2907912168/4184b41a9ee69bd7bd598f724f3b75cc.jpeg");
+    background-size: cover;
+    background-position: center;
+    border: 2px solid #fca311;
+    border-radius: 100%;
+    position: absolute;
+    left: 40px;
+    width: 10em;
+    height: 10em;
+}
+
+.sec-container #sec-2 .container #pastor-left #pastor-bio{
+    display: block; 
+    border: 1px solid #fca311;
+    border-radius: 1em;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fca311;
+    text-shadow: 1px 1px 25px black;
+    position: absolute;
+    top: 170px;
+    left: 1px;
+    right: 20px;
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+}
+
+
+.sec-container #sec-2 .container #worship{
+
+}
+#sec-3{
+    display: flex;
+    justify-content: center;
+    padding: 2em;
+    height: 103%;
+    background-color: #1d3557;
+    justify-content: center;
+}
+
+.sec-container #sec-3 .container{
+    display: block;
+    position: absolute;
+    justify-content: center;
+    background: transparent;
+    width: 100%;
+    height: 55%;
+}
+
+.sec-container #sec-3 .container p{
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 15%;
+    font-size: 20px;
+    font-weight: 600;
+    color: #a8dadc;
+}
+
+
+.sec-container #sec-3 #header-2{
+    font-size: 2em;
+    font-weight: 800;
+    color: goldenrod;
+}
+
+.sec-container #sec-3 #header-2:after{
+    content: '';
+    display: block;
+    margin: auto;
+    height: 3px;
+    width: 0px;
+    background:blue;
+    -webkit-animation-name: border;
+    -webkit-animation-duration: 4s;
+    -webkit-animation-fill-mode: forwards;
+    animation-name: border;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+#sec-4{
+    height: 100%;
+    background-color: antiquewhite
+}
