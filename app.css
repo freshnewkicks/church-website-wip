@@ -199,7 +199,6 @@ section{
 .sec-container #sec-2 .container{
     display: flex;
     justify-content: center;
-    background: transparent;
     width: 100%;
     height: 55%;
 }
@@ -275,42 +274,38 @@ section{
 }
 
 
-.sec-container #sec-2 .container #worship{
-
-}
 #sec-3{
     display: flex;
     justify-content: center;
     padding: 2em;
+    width: 100%;
     height: 103%;
-    background-color: #1d3557;
-    justify-content: center;
+    background-color: #1b4332;
 }
 
 .sec-container #sec-3 .container{
     display: block;
     position: absolute;
-    justify-content: center;
-    background: transparent;
-    width: 100%;
+    width: 65%;
     height: 55%;
+    text-align: center;
 }
 
 .sec-container #sec-3 .container p{
-    display: block;
+    display:;
     width: 100%;
     position: absolute;
     top: 15%;
     font-size: 20px;
     font-weight: 600;
-    color: #a8dadc;
+    color: #fca311;
 }
 
 
 .sec-container #sec-3 #header-2{
     font-size: 2em;
     font-weight: 800;
-    color: goldenrod;
+    color: #fca311;
 }
 
 .sec-container #sec-3 #header-2:after{
@@ -332,4 +327,37 @@ section{
 #sec-4{
     height: 100%;
     background-color: antiquewhite
+}
+
+
+@media all and (max-width: 1365px){
+    #sec-1{
+        font-size: .8em;
+    }
+    #sec-2{
+        font-size: .8em;
+    }
+    .nav #contact{
+    display: block;
+    position: absolute;
+    left: 91%;
+    margin: auto;
+    top: 2%;
+    }
+}
+
+@media all and (max-width: 1100px){
+    #sec-1{
+        font-size: .5em;
+    }
+    #sec-2{
+        font-size: .5em;
+    }
+    .nav #contact{
+        display: block;
+        position: absolute;
+        left: 91%;
+        margin: auto;
+        top: 2%;
+    }
 }
